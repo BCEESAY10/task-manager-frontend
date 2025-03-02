@@ -13,7 +13,7 @@ function TaskManager(){
 
     async function fetchTasks() {
         try {
-            const response = await fetch("http://localhost:8000/tasks/");
+            const response = await fetch("https://task-manager-backend-zxrj.onrender.com/tasks/");
             const data = await response.json();
             setTasks(data);
         } catch (error) {
@@ -29,7 +29,7 @@ function TaskManager(){
         if (newTask.trim() === "") return;
 
         try {
-            const response = await fetch("http://localhost:8000/tasks/", {
+            const response = await fetch("https://task-manager-backend-zxrj.onrender.com/tasks/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
