@@ -1,5 +1,6 @@
 {
   "name": "task-manager-ui",
+  "homepage": "https://task-manager-frontend.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
